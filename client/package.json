@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "backend": "cross-env-shell \"cd ../server && source venv/bin/activate || venv\\Scripts\\activate && python main.py\"",
+    "backend": "cross-env-shell \"cd ../server && (source venv/bin/activate || venv\\Scripts\\activate) && python main.py\"",
     "start": "concurrently \"npm run dev\" \"npm run backend\""
   },
   "dependencies": {
